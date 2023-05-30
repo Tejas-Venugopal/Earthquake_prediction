@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{{url_for('static',filename='css/style1.css')}}">
+
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      background:url("{{url_for('static',filename='css/style2.jpg')}}")no-repeat;
+      background-size:cover;
+      color:#fff;
+  } 
+  </style>
+  <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LOW RISK ZONE</h2>
+        </div>
+    </div> 
+    <div class="content">
+        <h1>magnitude value IS {{p}} <br><span></span></h1> 
+        <p class="par">"while the current seismic activity in your area suggests a low risk  
+                    <br>of an earthquake, it is still important that you do not neglect the <br>
+                        possibility of such an event occuring . Please remember that earthquake <br>
+                        can occur unexpectedly, so it is better to be prepared even if the risk <br>
+                        of earthquake is low."</p>
+            </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <h1>
+        <span>MAGNITUDE :</span>
+        <div class="message">
+          <div class="word1">{{p}}</div>
+          <div class="word2">BE..</div>
+          <div class="word3">BE SAFE!!</div>
+        </div>
+      </h1>
+</body>
+</html>

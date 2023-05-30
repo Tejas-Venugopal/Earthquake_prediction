@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{{url_for('static',filename='css/style.css')}}">
+
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      background:url("{{url_for('static',filename='css/style4.jpg')}}")no-repeat;
+      background-size:cover;
+      color:#fff;
+  } 
+  </style>
+  <div class="navbar">
+    <div class="icon">
+        
+        <h2 class="logo">EARTHQUAKE PREDICTION</h2>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="{{url_for('home2')}}">HOME</a></li>
+            <li><a href="{{url_for('about')}}">ABOUT</a></li>
+            <li><a href="{{url_for('contactus')}}">CONTACT</a></li>
+        </ul>
+    </div>
+    <br>
+       
+    <div class="content">
+        <h2 style="text-align:center" >ABOUT PROJECT</h2>
+        <h1>FORECASTING  SEISMIC  TREMORS  USING  <br>MACHINE  LEARNING  TECHNIQUES</h1> <br>
+        <p class="par">An earthquake is a type of natural disaster that causes havoc to both naturally existing and artificial structures, <br>
+                       including buildings, residential areas etc. Seismometers, which pick up vibrations caused by seismic waves moving <br>
+                       through the earth's crust, are used to measure earthquakes. The damage caused by an earthquake is categorized in <br>
+                       this work into damage ratings, which have values ranging from one to ten. An analysis of current machine learning <br>
+                       classifier techniques is being used to make the forecast of earthquake. Machine learning algorithms like Logistic <br>
+                       Regression, Support Vector Machine (SVM) and Random Forest Classifier these algorithms are employed in the prediction <br>
+                       of the earthquake. After studying all the above used algorithms in that the best algorithm will be taken into consideration. <br>
+                       Proposed implementation uses two types of datasets. Results are tabulated, both algorithms achieve good accuracy, but their <br>
+                       application in real situations can be based on the trade-off between speed and accuracy. <br> <br>
+                       This project is to predict the magnitude of earthquake for a region given by the user with the help historical data. As we <br>
+                       know that the destruction caused by earthquakes is massive and causes loss of lives every year. There is several ways Geologist <br>
+                       use to predict earthquakes. The results so far have been successful in telling where an earthquake has more probability to occur <br>
+                       but when it will happen is still under research. This application will ask the user to enter the range of latitude and longitude <br>
+                       for the region where they want to know if earthquake can occur. Based on these co-ordinates it will use the data set and apply <br> 
+                       Regression algorithms to make the prediction. The mean square error is also calculated so we can find which algorithm gives accurate results. </p>
+            </div>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

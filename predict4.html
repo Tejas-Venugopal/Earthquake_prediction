@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{{url_for('static',filename='css/style1.css')}}">
+
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      background:url("{{url_for('static',filename='css/style4.jpg')}}")no-repeat;
+      background-size:cover;
+      color:#fff;
+  } 
+  </style>
+  <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">HIGH RISK ZONE</h2>
+        </div>
+    </div> 
+    <div class="content">
+        <h1>magnitude value IS {{p}} <br><span></span></h1> 
+        <p class="par">"Based on the current seismic activity in your area, it appears that you are at a  
+                    <br>high risk of experiencing an earthquake .for your safety, it is imperative that you  <br>
+                        evacuate your home or workplac as soon as possible. Do not delay in taking action <br>
+                        to protect yourself from the potential harzards of an earthquake " </p>
+            </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <h1>
+        <span>MAGNITUDE :</span>
+        <div class="message">
+          <div class="word1">{{p}}</div>
+          <div class="word2">brace.for</div>
+          <div class="word3">Impact</div>
+        </div>
+      </h1>
+</body>
+</html>

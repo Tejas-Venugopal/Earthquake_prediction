@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Earthquake Webpage</title>
+    <link rel="stylesheet" href= "{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <style>
+        body{
+            background:url("{{url_for('static',filename='css/earth.jpg')}}")no-repeat;
+            background-size:cover;
+            color:#fff;
+        }
+    </style>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                
+                <h2 class="logo">EARTHQUAKE PREDICTION</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{url_for('home2')}}">HOME</a></li>
+                    <li><a href="{{url_for('about')}}">ABOUT</a></li>
+                    <li><a href="{{url_for('contactus')}}">CONTACT</a></li>
+                </ul>
+            </div>
+            
+    
+
+        </div> 
+        <div class="content">
+            <h1>FORECASTING SEISMIC TREMORS USING  <br><span>MACHINE LEARNING TECHNIQUES</span> <br><br>Objective </h1> <br>
+            <p class="par">The ultimate goal of your project may be to improve our ability to predict earthquakes and help mitigate 
+                 <br>the impact of seismic events. 
+                <!--<br> a quae totam ipsa illum minus laudantium?</p>-->
+
+               <!--<button class="cn"><a href="#">JOIN US</a></button>--> 
+               <h2>RAJARAJESHWARI COLLEGE OF ENGINEERING</h2>
+
+                <div class="form">
+                    <form name = "passdata"action="." method = "post">
+                    <h2>Predict Here</h2>
+                    <input type="text" name="latitude" placeholder="Enter latitude Here">
+                    <input type="text" name="longitude" placeholder="Enter longitude Here">
+                    <input type="text" name="depth" placeholder="Enter depth Here">
+
+                    <button class="btnn">Predict</button>
+
+                    <p class="link">are you ready to Predict...!<br>
+                    <!--<a href="#">Sign up </a> here</a></p>-->
+                    <p class="liw">contact me @</p>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/tejas.appu.927"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/_tejas_v_/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://github.com/Tejas-Venugopal"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="https://myaccount.google.com/profile"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="https://www.linkedin.com/in/tejas-v-71b3aa23b/p"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                    </form>
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
